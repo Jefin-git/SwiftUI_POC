@@ -11,6 +11,9 @@
 		784D52C22914F0E300F4EAA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D52C12914F0E300F4EAA8 /* ContentView.swift */; };
 		784D52C42914F0E500F4EAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784D52C32914F0E500F4EAA8 /* Assets.xcassets */; };
 		784D52C82914F0E500F4EAA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784D52C72914F0E500F4EAA8 /* Preview Assets.xcassets */; };
+		784D52D82914F2AA00F4EAA8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D52D72914F2AA00F4EAA8 /* Article.swift */; };
+		784D52DB2914F35300F4EAA8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D52DA2914F35300F4EAA8 /* HTTPClient.swift */; };
+		784D52DE2914F75500F4EAA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D52DD2914F75500F4EAA8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		784D52C32914F0E500F4EAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784D52C52914F0E500F4EAA8 /* SwiftUI_POC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_POC.entitlements; sourceTree = "<group>"; };
 		784D52C72914F0E500F4EAA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		784D52D72914F2AA00F4EAA8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		784D52DA2914F35300F4EAA8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		784D52DD2914F75500F4EAA8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,12 @@
 		784D52BE2914F0E300F4EAA8 /* SwiftUI_POC */ = {
 			isa = PBXGroup;
 			children = (
+				784D52DC2914F74700F4EAA8 /* Utils */,
+				784D52D92914F2F500F4EAA8 /* Services */,
+				784D52D12914F1CE00F4EAA8 /* ViewModels */,
+				784D52D02914F1C000F4EAA8 /* Models */,
+				784D52CF2914F1B600F4EAA8 /* Views */,
+				784D52CE2914F18E00F4EAA8 /* Screens */,
 				784D52BF2914F0E300F4EAA8 /* SwiftUI_POCApp.swift */,
 				784D52C12914F0E300F4EAA8 /* ContentView.swift */,
 				784D52C32914F0E500F4EAA8 /* Assets.xcassets */,
@@ -67,6 +79,51 @@
 				784D52C72914F0E500F4EAA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		784D52CE2914F18E00F4EAA8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		784D52CF2914F1B600F4EAA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		784D52D02914F1C000F4EAA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				784D52D72914F2AA00F4EAA8 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		784D52D12914F1CE00F4EAA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		784D52D92914F2F500F4EAA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				784D52DA2914F35300F4EAA8 /* HTTPClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		784D52DC2914F74700F4EAA8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				784D52DD2914F75500F4EAA8 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784D52DE2914F75500F4EAA8 /* Constants.swift in Sources */,
+				784D52D82914F2AA00F4EAA8 /* Article.swift in Sources */,
 				784D52C22914F0E300F4EAA8 /* ContentView.swift in Sources */,
+				784D52DB2914F35300F4EAA8 /* HTTPClient.swift in Sources */,
 				784D52C02914F0E300F4EAA8 /* SwiftUI_POCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
